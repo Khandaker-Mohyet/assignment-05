@@ -15,18 +15,6 @@ document.getElementById('history-btn').addEventListener('click', function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 document.getElementById('donate-money').addEventListener('click', function () {
   if (getInputFieldValueById('noakhali-donate') < 0) {
     alert('you are fake')
@@ -49,24 +37,13 @@ document.getElementById('donate-money').addEventListener('click', function () {
     div.classList.add('rounded-md');
     div.classList.add('my-2');
     div.innerHTML = `
-    <p class="font-bold">${donateMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+    <p class="font-bold">${donateMoney} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
     <p class="text-gray-500">Date: ${new Date().toLocaleString()}</p>
     `;
 
     document.getElementById('history-section').appendChild(div);
 
 
-
-
-
-  // const div = document.createElement('div');
-  // div.classList.add('border-2 border-slate-100 p-4')
-  // div.innerHTML = `
-  //                 <p>${donateMoney} Taka is Donated for famine-2024 at Noakhali, Bangladesh </p>
-  //                 `
-    
-
-  //   document.getElementById('history-section').appendChild(div);
   }
 
 
@@ -88,6 +65,19 @@ document.getElementById('donate-money-fani').addEventListener('click', function 
 
   document.getElementById('main-amount').innerText = mainNumber;
   document.getElementById('donate-amount-fani').innerText = donateNumber;
+    
+    // history section
+    const div = document.createElement('div');
+    div.classList.add('border-2');
+    div.classList.add('p-3');
+    div.classList.add('rounded-md');
+    div.classList.add('my-2');
+    div.innerHTML = `
+    <p class="font-bold">${donateMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+    <p class="text-gray-500">Date: ${new Date().toLocaleString()}</p>
+    `;
+
+    document.getElementById('history-section').appendChild(div);
   }
 })
 
@@ -107,5 +97,18 @@ document.getElementById('donate-money-aid').addEventListener('click', function (
 
   document.getElementById('main-amount').innerText = mainNumber;
   document.getElementById('donate-amount-aid').innerText = donateNumber;
+    
+    // history section
+    const div = document.createElement('div');
+    div.classList.add('border-2');
+    div.classList.add('p-3');
+    div.classList.add('rounded-md');
+    div.classList.add('my-2');
+    div.innerHTML = `
+    <p class="font-bold">${donateMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+    <p class="text-gray-500">Date: ${new Date().toLocaleString()}</p>
+    `;
+
+    document.getElementById('history-section').appendChild(div);
   }
 })
