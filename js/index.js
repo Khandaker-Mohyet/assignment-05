@@ -43,6 +43,11 @@ document.getElementById('donate-money').addEventListener('click', function () {
 
     document.getElementById('history-section').appendChild(div);
 
+    //!pop up Button added
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-confirmation").addEventListener("click", function () {
+        document.getElementById("popup").classList.add("hidden");
+      });
 
   }
 
@@ -78,6 +83,12 @@ document.getElementById('donate-money-fani').addEventListener('click', function 
     `;
 
     document.getElementById('history-section').appendChild(div);
+
+    //!pop up Button added
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-confirmation").addEventListener("click", function () {
+        document.getElementById("popup").classList.add("hidden");
+      });
   }
 })
 
@@ -110,5 +121,11 @@ document.getElementById('donate-money-aid').addEventListener('click', function (
     `;
 
     document.getElementById('history-section').appendChild(div);
+
+    //!pop up Button added
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-confirmation").addEventListener("click", function () {
+    document.getElementById("popup").classList.add("hidden");
+    });
   }
 })
